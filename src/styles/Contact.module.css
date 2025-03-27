@@ -1,0 +1,118 @@
+.contact_section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 40px);
+  max-height: 500px;
+}
+.contact_section h2 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.contact_content p {
+  color: #ddd;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.contact_links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.contact_links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  min-width: 100px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  background-color: #29323c;
+  box-shadow: 0 0 2px #ccc;
+}
+.contact_links a:hover {
+  background-color: #485563;
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+.contact_links svg {
+  width: 40px;
+  height: 40px;
+}
+.popup {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  background-color: #6aff83;
+  color: #333;
+  padding: 0 0.5rem;
+  height: 36px;
+  border-radius: 3px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 0.9rem;
+}
+@media only screen and (max-width: 770px) {
+  .contact_section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contact_content p {
+    font-size: 1.2rem;
+  }
+  .contact_links a {
+    letter-spacing: 1px;
+    min-width: fit-content;
+  }
+  .contact_links svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact_section {
+    padding: 1rem 0.3rem;
+  }
+  .contact_content p {
+    font-size: 1rem;
+  }
+  .contact_links {
+    gap: 0.5rem;
+  }
+  .contact_links a {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    letter-spacing: 0;
+  }
+  .contact_links svg {
+    width: 16px;
+    height: 16px;
+  }
+}
